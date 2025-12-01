@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0b1021;
+  --foreground: #e5e7eb;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(180deg, #0b1021 0%, #0f172a 100%);
+}
+
+.card {
+  @apply bg-white/5 border border-white/10 rounded-xl shadow-md;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg bg-brand-600 hover:bg-brand-700 transition-colors text-white font-medium px-4 py-2;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 transition-colors text-white font-medium px-4 py-2;
+}
+
